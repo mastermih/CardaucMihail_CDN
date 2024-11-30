@@ -9,8 +9,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("userProfileImages/**" , "staticFiles/**")
-                .addResourceLocations("file:./src/userProfileImages/", "file:./src/staticFiles/", "file:/app/userProfileImages/", "file:/app/staticFiles/");
+        registry.addResourceHandler("userProfileImages/**" , "staticFiles/**", "Invoices/**")
+                .addResourceLocations("file:./src/userProfileImages/", "file:./src/staticFiles/", "file:/app/userProfileImages/","file:/app/Invoices/", "file:/app/staticFiles/");
     }
     @Override
     public void addCorsMappings(CorsRegistry registry) {

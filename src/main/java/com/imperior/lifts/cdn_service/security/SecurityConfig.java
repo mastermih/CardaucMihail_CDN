@@ -64,6 +64,7 @@ public class SecurityConfig {
             "/ws/**",
             "/app/**",
             "/staticFiles/**",
-            "/userProfileImages/**"
+            "/userProfileImages/**",
+            "/upload/invoice/**"
     };
 }
